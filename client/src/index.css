@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Italiano", cursive;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+nav {
+  background-color: #2c2c2c;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+/* .nav__link:hover {
+  color: orange;
+  transform: scale(1.1);
+} */
+.active {
+  text-decoration: underline;
+  color: orange;
+  transform: scale(1.1);
+}
+
+/* header {
+  height: 30vh;
+} */
+.banner {
+  height: 100%;
+  background-image: url("./assets/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  min-height: 80vh;
+}
+.loading-gif {
+  height: 6rem;
+  width: 6rem;
+}
+.error {
+  flex-direction: column;
+}
+.error-page {
+  color: red;
+  font-size: 5rem;
+}
+
+/* dropdown menu: collected from w3school  */
+.dropbtn {
+  /* background-color: #4caf50; */
+  color: white;
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #302c2c;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* register form  */
+.container {
+  flex-direction: column;
+  padding: 1rem;
+}
+.card {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  width: 25rem;
+  max-width: 100%;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  font-family: fantasy;
+  font-size: 1.2rem;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  font-size: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+input:focus {
+  background-color: bisque;
+}
+textarea {
+  resize: none;
+  height: 5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: var(--border-radius);
+  transition: all 0.3s;
+  background-color: #4c4c4c;
+  color: white;
+  font-size: 1.2rem;
+  background-color: green;
+  padding: 0.6rem;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  height: 10vh;
+}
+
+/* day 3  */
+.container-full {
+  display: flex;
+  min-height: 80vh;
+}
+.sidebar {
+  background-color: #4c4c4c;
+  flex: 1;
+  padding: 1rem;
+  color: white;
+}
+.info {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.round {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.sidebar__lists {
+  margin-top: 3rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sidebar__list {
+  background-color: #2c2c2c;
+  width: 80%;
+
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+.sidebar__list:hover {
+  background-color: rgb(22, 22, 21);
+  cursor: pointer;
+}
+.main-content {
+  background-color: aliceblue;
+  flex: 3;
+  padding: 1rem;
+}
+
+.categories {
+  margin-top: 3rem;
+}
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.category__btn {
+  width: 12rem;
+}
+.action-btn {
+  background: #000;
+  margin: 0.1rem;
+}
+
+/* 4th day  */
+.product-img {
+  width: 200px;
+  height: auto;
+}
+.products__card {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.product {
+  background-color: antiquewhite;
+  padding: 1rem;
+  position: relative;
+}
+
+/* 5th day  */
+.badge1 {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.badge2 {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+.products__card {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.products {
+  height: 80vh;
+  overflow: scroll;
+}
+
+/* 5th day  */
+.cart-icon {
+  height: 100%;
+  position: relative;
+  color: white;
+}
+
+.badge {
+  background-color: red;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  color: white;
+  padding: 2px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cart-title {
+  background-color: rgb(196, 115, 9);
+  height: 10vh;
+  color: white;
+}
+.cart-main {
+  padding: 1rem;
+  display: flex;
+}
+.cart-items {
+  flex: 1;
+}
+.checkout-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cart-card {
+  background-color: rgb(216, 207, 207);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin: 1rem;
+  gap: 1rem;
+}
+.cart-left {
+  flex: 1;
+}
+.cart-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cart-img {
+  width: 150px;
+  height: auto;
+}
+.cart__btn {
+  border: none;
+  background-color: transparent;
+  color: red;
+}
